@@ -1,0 +1,22 @@
+.navLink {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-inline: 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  gap: 5px;
+  transition: var(--dynamic-fast-transition);
+}
+
+.navLink:hover {
+  background: var(--surface-secondary);
+}
+
+.navLink svg {
+  transition: var(--dynamic-fast-transition);
+}
+
+.navLink:hover svg {
+  transform: rotate(180deg);
+}
