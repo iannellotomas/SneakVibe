@@ -3,6 +3,7 @@ import NavBar from "./components/presentation/NavBar/NavBar";
 import ItemListContainer from "./components/containers/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/containers/ItemDetailContainer/ItemDetailContainer";
 import "./App.css";
+import Error404 from "./components/presentation/Error404/Error404";
 
 export default function App() {
 	return (
@@ -21,7 +22,10 @@ export default function App() {
 					path="/producto/:id"
 					element={<ItemDetailContainer />}
 				/>
-				{/* AGREGAR PATH * PARA ERROR 404 */}
+				<Route
+					path="*"
+					element={<Error404 />}
+				/>
 			</Routes>
 		</BrowserRouter>
 	);
