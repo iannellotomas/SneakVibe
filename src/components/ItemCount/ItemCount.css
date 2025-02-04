@@ -1,0 +1,31 @@
+.amountProducts {
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  width: max-content;
+  height: 40px;
+  overflow: hidden;
+  padding-inline: 5px;
+  background: var(--surface-secondary);
+}
+
+.amountProducts > span {
+  width: 50px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.amountProducts button {
+  width: 40px;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.amountProducts button svg {
+  opacity: .5;
+}
+
+.amountProducts button:hover svg {
+  opacity: 1;
+}

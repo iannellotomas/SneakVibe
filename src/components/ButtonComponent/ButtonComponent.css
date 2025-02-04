@@ -1,0 +1,64 @@
+.buttonComponent {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-inline: 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  gap: 10px;
+  transition: var(--dynamic-fast-transition);
+}
+
+.buttonComponent:hover {
+  background: var(--surface-secondary);
+}
+
+.buttonComponent svg {
+  transition: var(--dynamic-fast-transition);
+  width: 24px;
+}
+
+.buttonComponent path {
+  stroke: var(--surface-primary);
+  stroke-width: 1.5;
+}
+
+/* PRIMARY BUTTON */
+.buttonComponent.primary {
+  width: 100%;
+  background: var(--color-primary);
+  color: var(--surface-primary);
+  height: 40px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: .25px;
+  margin-top: 10px;
+}
+
+.buttonComponent.primary span {
+  width: 100%;
+  text-align: center;
+}
+
+.buttonComponent.primary:hover {
+  background: var(--hover-primary);
+}
+
+.buttonComponent:active {
+  transform: scale(.9);
+}
+
+/* LARGE BUTTON */
+.buttonComponent.large {
+  height: 50px;
+  padding-inline: 30px !important;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.buttonComponent svg {
+  transition: var(--dynamic-fast-transition);
+  width: 32px;
+  height: 32px;
+}

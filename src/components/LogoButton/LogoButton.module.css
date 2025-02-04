@@ -6,3 +6,8 @@
   height: 50px;
   object-fit: contain;
 }
+
+.logo:active {
+  transform: scale(.9);
+  transition: var(--dynamic-transition);
+}

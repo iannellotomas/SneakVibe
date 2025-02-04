@@ -1,0 +1,8 @@
+.containerProducts {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-block: 20px 40px;
+}

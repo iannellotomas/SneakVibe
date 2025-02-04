@@ -1,38 +1,30 @@
 import styles from "./NavBar.module.css";
 import LogoButton from "../LogoButton/LogoButton";
-import SearchBar from "../SearchBar/SearchBar";
-import NavLink from "../NavLink/NavLink";
-import NavWidget from "../NavWidget/NavWidget";
+import ButtonComponent from "../ButtonComponent/ButtonComponent";
+import CartWidget from "../CartWidget/CartWidget";
 
 export default function NavBar() {
-	const username = "Florencia";
-
 	return (
 		<nav className={styles.nav}>
 			<div className={styles.navLeft}>
-				<LogoButton />
-				<SearchBar />
+				<LogoButton linkTo="/" />
 			</div>
 			<div className={styles.navCenter}>
-				<NavLink text="Novedades" />
-				<NavLink
-					text="Adultos"
-					hasDropdown
+				<ButtonComponent
+					type="link"
+					text="Zapatillas"
 				/>
-				<NavLink
-					text="Niños"
-					hasDropdown
+				<ButtonComponent
+					type="link"
+					text="Botines"
 				/>
-				<NavLink text="Ofertas" />
+				<ButtonComponent
+					type="link"
+					text="Sandalias"
+				/>
 			</div>
 			<div className={styles.navRight}>
-				<NavWidget
-					type="user"
-					text={username}
-					hasDropdown
-				/>
-				<NavWidget type="cart" badge={3} />
-				<NavWidget type="notification" />
+				<CartWidget productsInCart={3} />
 			</div>
 		</nav>
 	);

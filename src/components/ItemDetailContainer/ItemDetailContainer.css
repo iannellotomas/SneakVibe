@@ -1,0 +1,74 @@
+.detailProduct {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+  opacity: 0;
+  animation: fadeIn .3s ease forwards;
+  overflow: hidden;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.detailProduct .image {
+  width: 50%;
+  height: calc(100vh - 140px);
+  border: 1px solid var(--border-primary);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.detailProduct .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detailProduct .info {
+  width: 50%;
+}
+
+.detailProduct h1 {
+  font-size: 36px;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.detailProduct h2 {
+  font-size: 44px;
+  font-weight: 300;
+}
+
+.detailProduct h3 {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: .6;
+  text-transform: uppercase;
+}
+
+.detailProduct p {
+  margin-block: 10px 20px;
+}
+
+.detailProduct .info > span {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.detailProduct .info > span > span {
+  color: var(--text-secondary);
+}
+
+.detailProduct .info > a {
+  width: max-content;
+  padding: 0 20px;
+}

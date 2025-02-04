@@ -5,11 +5,15 @@
 }
 
 * {
-  /* COLORS */
-  --color-primary: #0E70B6;
+  /* SURFACE */
   --surface-primary: #E6F1F8;
   --surface-secondary: #DAE3E8;
+  --border-primary: #c1c5c7;
+  /* TEXT */
   --text-primary: #0F0A0A;
+  --text-secondary: #424242;
+  --color-primary: #0E70B6;
+  --hover-primary: #0d578d;
   /* TRANSITIONS */
   --transition: .15s ease;
   --transition-low: .3s ease;
@@ -54,7 +58,8 @@ textarea {
 }
 
 button:active {
-  transform: scale(1.1);
+  transform: scale(0.9);
+  transition: var(--dynamic-transition);
 }
 
 input,
