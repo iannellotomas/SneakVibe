@@ -1,25 +1,21 @@
-import "./ItemList.css";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
-import { motion } from "framer-motion";
+import "./ItemList.css";
 
 export default function ProductCard({ product }) {
 	return (
 		<article className="productCard">
-			<motion.div
-				className="image"
-				layout
-				layoutId={`product-${product.id}`}>
+			<div className="image">
 				<img
 					src={product.image}
 					alt={`Foto de ${product.title}`}
 				/>
 				<span className="category">{product.category}</span>
-			</motion.div>
+			</div>
 			<div className="info">
 				<h3>{product.title}</h3>
 				<h4>${product.price.toLocaleString("es")}</h4>
 				<ButtonComponent
-					linkTo={`/product/${product.id}`}
+					linkTo={`/producto/${product.id}`}
 					text="Ver más detalles"
 				/>
 			</div>

@@ -1,26 +1,16 @@
-import { useParams } from "react-router-dom";
-import { dataProducts } from "../../data/dataProducts";
-import { motion } from "framer-motion";
-import ButtonComponent from "../ButtonComponent/ButtonComponent";
+import "./ItemDetail.css";
 import ItemCount from "../ItemCount/ItemCount";
-import "./ItemDetailContainer.css";
+import ButtonComponent from "../ButtonComponent/ButtonComponent";
 
-export default function ItemDetailContainer() {
-	const { id } = useParams();
-	console.log(id);
-	const product = dataProducts.find((item) => item.id == id);
-
+export default function ItemDetail({ product }) {
 	return (
-		<section className="detailProduct">
-			<motion.div
-				className="image"
-				layout
-				layoutId={`product-${product.id}`}>
+		<section className="itemDetail">
+			<div className="image">
 				<img
 					src={product.image}
 					alt={`Foto de ${product.title}`}
 				/>
-			</motion.div>
+			</div>
 			<div className="info">
 				<h3 className="breadcrumbs">Inicio / {product.category}</h3>
 				<h1>{product.title}</h1>

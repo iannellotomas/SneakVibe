@@ -1,5 +1,5 @@
-import "./ButtonComponent.css";
 import { Link } from "react-router-dom";
+import "./ButtonComponent.css";
 
 const icons = [
 	{
@@ -45,9 +45,8 @@ const icons = [
 ];
 
 export default function ButtonComponent({
-	linkTo,
 	text,
-	type = "primary",
+	linkTo,
 	size = "small",
 	iconName,
 }) {
@@ -57,7 +56,7 @@ export default function ButtonComponent({
 		<Link
 			to={linkTo ? linkTo : null}
 			href="#"
-			className={`buttonComponent ${type} ${size}`}>
+			className={`buttonComponent ${size}`}>
 			{currentIcon}
 			<span>{text}</span>
 		</Link>

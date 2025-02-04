@@ -1,4 +1,5 @@
-.detailProduct {
+
+.itemDetail {
   width: 100%;
   display: flex;
   gap: 30px;
@@ -6,12 +7,6 @@
   opacity: 0;
   animation: fadeIn .3s ease forwards;
   overflow: hidden;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
 }
 
 .detailProduct .image {
@@ -32,7 +27,7 @@
   width: 50%;
 }
 
-.detailProduct h1 {
+.detailProduct .info h1 {
   font-size: 36px;
   width: 100%;
   white-space: nowrap;
@@ -41,12 +36,12 @@
   margin-top: 20px;
 }
 
-.detailProduct h2 {
+.detailProduct .info h2 {
   font-size: 44px;
   font-weight: 300;
 }
 
-.detailProduct h3 {
+.detailProduct .info h3 {
   font-size: 14px;
   font-weight: 400;
   opacity: .6;

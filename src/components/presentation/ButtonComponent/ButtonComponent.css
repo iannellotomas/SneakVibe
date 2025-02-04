@@ -1,16 +1,23 @@
 .buttonComponent {
-  height: 100%;
+  width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding-inline: 15px;
+  height: 40px;
+  background: var(--color-primary);
+  color: var(--surface-primary);
   border-radius: 10px;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 600;
   gap: 10px;
-  transition: var(--dynamic-fast-transition);
+  letter-spacing: .25px;
+  margin-top: 10px;
+  transition: var(--dynamic-transition);
 }
 
-.buttonComponent:hover {
-  background: var(--surface-secondary);
+.buttonComponent span {
+  width: 100%;
+  text-align: center;
 }
 
 .buttonComponent svg {
@@ -23,25 +30,7 @@
   stroke-width: 1.5;
 }
 
-/* PRIMARY BUTTON */
-.buttonComponent.primary {
-  width: 100%;
-  background: var(--color-primary);
-  color: var(--surface-primary);
-  height: 40px;
-  border-radius: 10px;
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: .25px;
-  margin-top: 10px;
-}
-
-.buttonComponent.primary span {
-  width: 100%;
-  text-align: center;
-}
-
-.buttonComponent.primary:hover {
+.buttonComponent:hover {
   background: var(--hover-primary);
 }
 
