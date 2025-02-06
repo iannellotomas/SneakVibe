@@ -1,6 +1,6 @@
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import "./Error404.css";
-import Fingerprint from "../../../assets/Fingerprint.png";
+import Fingerprint from "../../../../public/Fingerprint.png";
 
 export default function () {
 	return (
