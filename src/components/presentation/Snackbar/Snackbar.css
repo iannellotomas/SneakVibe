@@ -1,0 +1,81 @@
+.snackbar {
+  background: var(--text-primary);
+  position: fixed;
+  z-index: 100;
+  top: 110px;
+  right: 4vw;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 30px 5px 5px;
+  border-radius: 20px;
+  color: var(--surface-primary);
+  box-shadow: 0 5px 10px 3px #0f0a0a76;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: var(--dynamic-transition);
+}
+
+.snackbarImage {
+  height: 100%;
+  position: relative;
+}
+
+.snackbarImage img {
+  height: 100%;
+  border-radius: 15px;
+  user-select: none;
+}
+
+.snackbarImage > span {
+  position: absolute;
+  left: -5px;
+  bottom: -5px;
+  background: var(--success);
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  border-radius: 50px;
+  border: 4px solid var(--text-primary);
+}
+
+.snackbarImage > span svg {
+  width: 12px;
+}
+
+.snackbarImage > span path {
+  stroke: var(--text-primary);
+}
+
+.snackbar > span {
+  display: flex;
+  flex-direction: column;
+}
+
+.snackbar > span p {
+  margin: 0;
+  opacity: .8;
+  font-size: 14px;
+}
+
+.polygonSnackbar {
+  position: absolute;
+  right: 20px;
+  top: -12px;
+  width: 30px;
+  height: 25px;
+}
+
+.polygonSnackbar path {
+  fill: var(--text-primary);
+}
+
+
+/* SHOW */
+.snackbar.show {
+  opacity: 1;
+  transform: translateY(0);
+}

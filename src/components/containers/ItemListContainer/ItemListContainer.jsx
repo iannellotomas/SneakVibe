@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { getProducts } from "../../../helpers/asyncMock";
-import "./ItemListContainer.css";
+import { getProducts } from "../../../helpers/asyncMock.js";
 import ItemList from "../../presentation/ItemList/ItemList";
+import Loader from "../../presentation/Loader/Loader";
+import "./ItemListContainer.css";
 
 export default function ItemListContainer() {
 	const { id: category } = useParams();
@@ -19,15 +20,18 @@ export default function ItemListContainer() {
 
 	return (
 		<main>
-			{loading ? <h3 className="loader">Cargando...</h3> : null}
-			<section className="containerProducts">
-				{products.map((item) => (
-					<ItemList
-						key={item.id}
-						product={item}
-					/>
-				))}
-			</section>
+			{loading ? (
+				<Loader />
+			) : (
+				<section className="containerProducts">
+					{products.map((item) => (
+						<ItemList
+							key={item.id}
+							product={item}
+						/>
+					))}
+				</section>
+			)}
 		</main>
 	);
 }

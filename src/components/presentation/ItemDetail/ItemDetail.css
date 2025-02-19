@@ -25,6 +25,7 @@
 
 .detailProduct .info {
   width: 50%;
+  padding-top: 30px;
 }
 
 .detailProduct .info h1 {
@@ -66,4 +67,9 @@
 .detailProduct .info > a {
   width: max-content;
   padding: 0 20px;
+}
+
+.detailProduct .errorText {
+  color: var(--error);
+  font-weight: 500;
 }

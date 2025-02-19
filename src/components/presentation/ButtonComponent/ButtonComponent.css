@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   height: 40px;
+  padding-inline: 30px;
   background: var(--color-primary);
   color: var(--surface-primary);
   border-radius: 10px;
@@ -16,16 +17,17 @@
 }
 
 .buttonComponent span {
-  width: 100%;
-  text-align: center;
+  width: max-content;
+  text-align: left;
 }
 
 .buttonComponent svg {
-  transition: var(--dynamic-fast-transition);
+  transition: var(--dynamic-transition);
   width: 24px;
 }
 
 .buttonComponent path {
+  transition: var(--dynamic-transition);
   stroke: var(--surface-primary);
   stroke-width: 1.5;
 }
@@ -40,14 +42,63 @@
 
 /* LARGE BUTTON */
 .buttonComponent.large {
+  width: max-content;
   height: 50px;
   padding-inline: 30px !important;
   margin-top: 15px;
   font-size: 18px;
+  gap: 15px;
 }
 
 .buttonComponent svg {
-  transition: var(--dynamic-fast-transition);
-  width: 32px;
-  height: 32px;
+  transition: var(--dynamic-transition);
+  width: 28px;
+  height: 28px;
+}
+
+
+/* SECONDARY BUTTON */
+.buttonComponent.secondary {
+  background: none;
+  width: max-content;
+  padding-inline: 15px;
+  gap: 5px;
+  color: var(--text-primary);
+}
+
+.buttonComponent.secondary path {
+  stroke: var(--text-primary);
+}
+
+.buttonComponent.secondary:hover {
+  color: var(--color-primary);
+}
+
+.buttonComponent.secondary:hover path {
+  stroke: var(--color-primary);
+}
+
+
+/* DISABLED STATE */
+.buttonComponent:disabled {
+  background: #9EA6AC;
+  color: var(--text-primary);
+  cursor: not-allowed;
+}
+
+.buttonComponent:disabled path {
+  stroke: var(--text-primary);
+}
+
+.buttonComponent:disabled > * {
+  opacity: .7;
+}
+
+.buttonComponent:disabled:active {
+  transform: none;
+}
+
+/* COMPLETED STATE */
+.buttonComponent.completed {
+  background: var(--text-primary);
 }

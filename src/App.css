@@ -1,19 +1,17 @@
-#root {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 4vw;
-}
-
 * {
   /* SURFACE */
   --surface-primary: #E6F1F8;
   --surface-secondary: #DAE3E8;
+  --surface-tertiary: #020F18;
+  --surface-fourth: #ffffff0d;
   --border-primary: #c1c5c7;
   /* TEXT */
   --text-primary: #0F0A0A;
   --text-secondary: #424242;
   --color-primary: #0E70B6;
   --hover-primary: #0d578d;
+  --error: #c40d0d;
+  --success: #06e06c;
   /* TRANSITIONS */
   --transition: .15s ease;
   --transition-low: .3s ease;
@@ -80,34 +78,4 @@ h1 {
 
 button {
   transition: var(--dynamic-fast-transition);
-}
-
-/* LOADER */
-.loader {
-  width: max-content;
-  position: absolute;
-  top: 90px;
-  left: 50%;
-  height: 40px;
-  font-size: 16px;
-  font-weight: 500;
-  z-index: 5;
-  padding-inline: 20px;
-  display: grid;
-  place-items: center;
-  border-radius: 10px;
-  background: var(--text-primary);
-  color: var(--surface-primary);
-  transform: translate(-50%, -30px);
-  box-shadow: 0 0 20px #27272781;
-  opacity: 0;
-  animation: fadeToBottom .3s ease forwards;
-}
-
-
-@keyframes fadeToBottom {
-  to {
-    opacity: 1;
-    transform: translate(-50%, 0);
-  }
 }

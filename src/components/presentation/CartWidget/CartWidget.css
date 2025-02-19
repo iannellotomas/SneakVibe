@@ -2,28 +2,46 @@
   position: relative;
   display: grid;
   place-items: center;
-  width: 40px;
+  width: 50px;
   height: 100%;
-  border: 1px solid var(--text-primary);
   border-radius: 10px;
   justify-content: center;
+  background: var(--surface-fourth);
   padding: 0;
+  transition: var(--dynamic-fast-transition);
+}
+
+.cartWidget svg {
+  width: 28px;
+  height: 28px;
+}
+
+.cartWidget path {
+  fill: var(--surface-primary);
+}
+
+.cartWidget.active {
+  background: var(--surface-primary);
+}
+
+.cartWidget.active path {
+  fill: var(--surface-tertiary);
 }
 
 .badge {
   position: absolute;
   right: -5px;
-  top: -7px;
-  width: 16px;
+  top: -10px;
+  width: 20px;
   height: 16px;
   display: grid;
   place-items: center;
-  background: var(--text-primary);
-  color: var(--surface-primary);
-  border: 3px solid var(--surface-primary);
-  border-radius: 50%;
+  background: var(--surface-primary);
+  color: var(--surface-tertiary);
+  border: 4px solid var(--surface-tertiary);
+  border-radius: 50px;
   font-size: 10px;
-  font-weight: 600;
+  font-weight: 800;
   line-height: 1.2;
   pointer-events: none;
   user-select: none;

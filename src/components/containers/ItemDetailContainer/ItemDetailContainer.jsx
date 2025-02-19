@@ -1,7 +1,8 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { getProduct } from "../../../helpers/asyncMock";
+import { getProduct } from "../../../helpers/asyncMock.js";
 import ItemDetail from "../../presentation/ItemDetail/ItemDetail";
+import Loader from "../../presentation/Loader/Loader";
 import "./ItemDetailContainer.css";
 
 export default function ItemDetailContainer() {
@@ -17,11 +18,7 @@ export default function ItemDetailContainer() {
 
 	return (
 		<section className="detailProduct">
-			{loading ? (
-				<h3 className="loader">Cargando...</h3>
-			) : (
-				<ItemDetail product={product} />
-			)}
+			{loading ? <Loader /> : <ItemDetail product={product} />}
 		</section>
 	);
 }

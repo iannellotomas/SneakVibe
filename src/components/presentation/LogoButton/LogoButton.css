@@ -1,5 +1,8 @@
 .logo {
   height: 100%;
+  display: grid;
+  position: relative;
+  place-items: center;
 }
 
 .logo img {

@@ -1,39 +1,33 @@
-import { Link, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import LogoButton from "../LogoButton/LogoButton";
 import CartWidget from "../CartWidget/CartWidget";
 import "./NavBar.css";
 
 export default function NavBar() {
-	const location = useLocation();
-	// Indicar link activo
-	const isLinkActive = (linkName) => {
-		return location.pathname === `/categoria/${linkName}`;
-	};
-
 	return (
 		<nav className="nav">
 			<div className="navLeft">
 				<LogoButton />
 			</div>
 			<div className="navCenter">
-				<Link
+				<NavLink
 					to="/categoria/zapatillas"
-					className={`navLink ${isLinkActive("zapatillas") ? "active" : ""}`}>
+					className="navLink">
 					Zapatillas
-				</Link>
-				<Link
+				</NavLink>
+				<NavLink
 					to="/categoria/botines"
-					className={`navLink ${isLinkActive("botines") ? "active" : ""}`}>
+					className="navLink">
 					Botines
-				</Link>
-				<Link
+				</NavLink>
+				<NavLink
 					to="/categoria/sandalias"
-					className={`navLink ${isLinkActive("sandalias") ? "active" : ""}`}>
+					className="navLink">
 					Sandalias
-				</Link>
+				</NavLink>
 			</div>
 			<div className="navRight">
-				<CartWidget productsInCart={3} />
+				<CartWidget />
 			</div>
 		</nav>
 	);

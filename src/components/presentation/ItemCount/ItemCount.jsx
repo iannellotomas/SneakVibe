@@ -1,14 +1,11 @@
 import "./ItemCount.css";
-import { useState } from "react";
 
-export default function ItemCount({ stock }) {
-	const [amountItems, setAmoutItems] = useState(1);
-
+export default function ItemCount({ stock, amount, setAmount }) {
 	const handleAmount = (type) => {
-		if (type == "-" && amountItems > 1) {
-			setAmoutItems(amountItems - 1);
-		} else if (type == "+" && amountItems < stock) {
-			setAmoutItems(amountItems + 1);
+		if (type == "-" && amount > 1) {
+			setAmount(amount - 1);
+		} else if (type == "+" && amount < stock) {
+			setAmount(amount + 1);
 		}
 	};
 
@@ -29,7 +26,7 @@ export default function ItemCount({ stock }) {
 					/>
 				</svg>
 			</button>
-			<span>{amountItems}</span>
+			<span>{amount}</span>
 			<button onClick={() => handleAmount("+")}>
 				<svg
 					width="15"
