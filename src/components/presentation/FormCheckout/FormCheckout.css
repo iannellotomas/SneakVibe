@@ -1,0 +1,38 @@
+/* CHECKOUT FORM */
+.checkoutForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-grow: 1;
+  max-height: max-content;
+  max-width: 800px;
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid var(--border-primary);
+}
+
+.checkoutForm h2 {
+  margin-bottom: 10px;
+}
+
+.checkoutForm > span {
+  display: flex;
+  gap: 20px;
+}
+
+.checkoutForm input {
+  border: 1px solid var(--border-primary);
+  padding-inline: 20px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.checkoutForm button {
+  margin: 0 auto !important;
+  flex-grow: 1;
+  width: auto !important;
+  min-width: 250px;
+  max-width: 300px;
+  max-height: 60px !important;
+  position: relative;
+}

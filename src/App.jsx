@@ -5,6 +5,7 @@ import ItemDetailContainer from "./components/containers/ItemDetailContainer/Ite
 import "./App.css";
 import CartProvider from "./context/cartContext";
 import CartContainer from "./components/containers/CartContainer/CartContainer";
+import CheckoutContainer from "./components/containers/CheckoutContainer/CheckoutContainer";
 import Error404 from "./components/presentation/Error404/Error404";
 
 export default function App() {
@@ -28,6 +29,10 @@ export default function App() {
 					<Route
 						path="/carrito"
 						element={<CartContainer />}
+					/>
+					<Route
+						path="/checkout"
+						element={<CheckoutContainer />}
 					/>
 					<Route
 						path="*"

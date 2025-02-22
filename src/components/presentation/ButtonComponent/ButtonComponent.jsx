@@ -93,6 +93,22 @@ const icons = {
 			/>
 		</svg>
 	),
+	back: (
+		<svg
+			width="27"
+			height="18"
+			viewBox="0 0 27 18"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg">
+			<path
+				d="M25.5 9H1.4082M1.4082 9L9.4082 1M1.4082 9L9.4082 17"
+				stroke="white"
+				strokeWidth="2"
+				strokeLinecap="round"
+				strokeLinejoin="round"
+			/>
+		</svg>
+	),
 };
 
 export default function ButtonComponent({
@@ -103,6 +119,7 @@ export default function ButtonComponent({
 	variant = "",
 	iconName,
 	completed,
+	onlyIcon = false,
 	isDisabled = false,
 }) {
 	const currentIcon = icons[iconName] || null;
@@ -110,17 +127,21 @@ export default function ButtonComponent({
 	return linkTo ? (
 		<Link
 			to={linkTo}
-			className={`buttonComponent ${size} ${variant} ${completed}`}>
+			className={`buttonComponent ${size} ${variant} ${completed} ${
+				onlyIcon ? "onlyIcon" : ""
+			}`}>
 			{currentIcon}
-			<span>{text}</span>
+			{!onlyIcon && <span>{text}</span>}
 		</Link>
 	) : (
 		<button
 			onClick={onClick}
-			className={`buttonComponent ${size} ${variant} ${completed}`}
+			className={`buttonComponent ${size} ${variant} ${completed} ${
+				onlyIcon ? "onlyIcon" : ""
+			}`}
 			disabled={isDisabled}>
 			{currentIcon}
-			<span>{text}</span>
+			{!onlyIcon && <span>{text}</span>}
 		</button>
 	);
 }

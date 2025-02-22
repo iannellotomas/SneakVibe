@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 
 export const CartContext = createContext(false);
 
@@ -31,13 +31,20 @@ export default function CartProvider({ children }) {
 
 	// Obtener precio de todos los productos
 	const getTotalPrice = () => {
-		return cartItems.reduce((total, item) => total + item.price * item.amount, 0);
+		return cartItems.reduce(
+			(total, item) => total + item.price * item.amount,
+			0
+		);
 	};
 
 	// Obtener cantidad de productos (incluyendo unidades c/u)
 	const getAmountProducts = () => {
 		return cartItems.reduce((total, item) => total + item.amount, 0);
 	};
+
+	useEffect(() => {
+		console.log("Carrito: ", cartItems);
+	}, [cartItems]);
 
 	return (
 		<CartContext.Provider

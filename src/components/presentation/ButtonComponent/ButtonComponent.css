@@ -102,3 +102,17 @@
 .buttonComponent.completed {
   background: var(--text-primary);
 }
+
+.onlyIcon {
+  width: 60px;
+  padding: 0;
+  background: none !important;
+}
+
+.onlyIcon path {
+  stroke: var(--text-primary);
+}
+
+.onlyIcon:hover path {
+  stroke: var(--color-primary);
+}

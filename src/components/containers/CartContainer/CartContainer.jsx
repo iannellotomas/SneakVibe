@@ -5,7 +5,8 @@ import ItemList from "../../presentation/ItemList/ItemList";
 import ButtonComponent from "../../presentation/ButtonComponent/ButtonComponent";
 
 export default function CartContainer() {
-	const { cartItems, clearCart, getTotalPrice, getAmountProducts } = useContext(CartContext);
+	const { cartItems, clearCart, getTotalPrice, getAmountProducts } =
+		useContext(CartContext);
 
 	return (
 		<section className="cartSection">
@@ -67,6 +68,7 @@ export default function CartContainer() {
 							<span>$ {getTotalPrice().toLocaleString("es")}</span>
 						</div>
 						<ButtonComponent
+							linkTo="/checkout"
 							text="Finalizar compra"
 							size="large"
 						/>
