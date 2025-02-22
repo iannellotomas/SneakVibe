@@ -11,10 +11,6 @@ export default function CheckoutContainer() {
 	const [orderId, setOrderId] = useState(null);
 	const navigate = useNavigate();
 
-	useEffect(() => {
-		console.log("Orden de compra creada: ", orderId);
-	}, [orderId]);
-
 	// Redirigir al carrito si no hay productos agregados
 	useEffect(() => {
 		if (cartItems.length == 0) navigate("/carrito");

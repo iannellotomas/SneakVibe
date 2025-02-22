@@ -10,14 +10,16 @@ import {
 	query,
 } from "firebase/firestore";
 
+
+// Variables de entorno
 const firebaseConfig = {
-	apiKey: "AIzaSyDmBLl6J5gi5AowNdmJZOdSPZy3dUCrgE8",
-	authDomain: "sneack-vibe.firebaseapp.com",
-	projectId: "sneack-vibe",
-	storageBucket: "sneack-vibe.firebasestorage.app",
-	messagingSenderId: "908784670045",
-	appId: "1:908784670045:web:048f0c3a8b83ef8141c4b4",
-	measurementId: "G-CS3RN97SFQ",
+	apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+	authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+	projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+	storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+	messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+	appId: import.meta.env.VITE_FIREBASE_APP_ID,
+	measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Inicializar Firebase

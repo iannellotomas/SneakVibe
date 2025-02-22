@@ -4,15 +4,13 @@
 ## 📌 ¿De qué se trata?
 SneakVibe es un **e-commerce de calzado** diseñado para ofrecer una experiencia de compra intuitiva y optimizada. Los usuarios pueden explorar una variedad de zapatillas, zapatos y otros calzados, guardando los productos en su carrito de compras de manera segura y eficiente.
 
----
 
-## 🚀 Link a producción
+### 🚀 Link a producción
 [Ver SneakVibe en producción ↗](https://sneakvibe.vercel.app/)
 
 ---
 
 ## 📷 Vistas de la UI
-Incluye las siguientes secciones:
 - 🏠 **Home**: Presentación de productos destacados y categorías.
 ![Mockup Home](https://i.postimg.cc/3JDKtkk9/Mockup-Home.png)
 - 🔍 **Catálogo**: Lista de productos filtrable por categoría.
@@ -63,8 +61,8 @@ Para ejecutar este proyecto en local, seguí estos pasos:
 
 ---
 
-## ✍️ Autor
-- **Nombre:** Tomás Iannello
+## ✍️ Créditos
+- **Desarrollador:** Tomás Iannello
 - **Portfolio:** [tomiannello.vercel.app](https://tomiannello.vercel.app)
 - **LinkedIn:** [linkedin.com/in/tomas-iannello](https://www.linkedin.com/in/tomas-iannello/)
 
