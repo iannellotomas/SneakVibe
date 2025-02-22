@@ -6,7 +6,7 @@ SneakVibe es un **e-commerce de calzado** diseñado para ofrecer una experiencia
 
 
 ### 🚀 Link a producción
-[Ver SneakVibe en producción ↗](https://sneakvibe.vercel.app/)
+[Ver SneakVibe en producción ⭢](https://sneakvibe.vercel.app/)
 
 ---
 
@@ -14,11 +14,11 @@ SneakVibe es un **e-commerce de calzado** diseñado para ofrecer una experiencia
 - 🏠 **Home**: Presentación de productos destacados y categorías.
 ![Mockup Home](https://i.postimg.cc/3JDKtkk9/Mockup-Home.png)
 - 🔍 **Catálogo**: Lista de productos filtrable por categoría.
-![Mockup Category](https://i.postimg.cc/TY22jF8Y/Mockup-Category.png)
+![Mockup Category](https://i.postimg.cc/Rhvqqwdd/Mockup-Category.png)
 - 🛒 **Carrito**: Resumen de productos seleccionados antes de la compra.
 ![Mockup Cart](https://i.postimg.cc/7hwHWQf9/Mockup-Cart.png)
 - 📝 **Checkout**: Formulario de pago con revisión de productos y costos.
-![Mockup Checkout](https://i.postimg.cc/qqwJVXKT/Mockup-Checkout.png)
+![Mockup Checkout](https://i.postimg.cc/VLkKMn0J/Mockup-Checkout.png)
 - ✅ **Orden de compra**: Confirmación de compra con datos sobre la orden.
 ![Mockup Purchase Success](https://i.postimg.cc/y6yYZBbb/Mockup-Success.png)
 
@@ -63,7 +63,7 @@ Para ejecutar este proyecto en local, seguí estos pasos:
 
 ## ✍️ Créditos
 - **Desarrollador:** Tomás Iannello
-- **Portfolio:** [tomiannello.vercel.app](https://tomiannello.vercel.app)
+- **Portfolio:** [tomiannello.vercel.app ](https://tomiannello.vercel.app)
 - **LinkedIn:** [linkedin.com/in/tomas-iannello](https://www.linkedin.com/in/tomas-iannello/)
 
 ---

@@ -74,6 +74,6 @@ export async function addOrder(order) {
 		const docRef = await addDoc(ordersCollection, order);
 		return docRef.id;
 	} catch (error) {
-		console.error("Error al agregar el documento nuevo ", error);
+		console.error("Error al crear la orden de compra: ", error);
 	}
 }
