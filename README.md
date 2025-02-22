@@ -18,7 +18,7 @@ SneakVibe es un **e-commerce de calzado** diseñado para ofrecer una experiencia
 - 🛒 **Carrito**: Resumen de productos seleccionados antes de la compra.
 ![Mockup Cart](https://i.postimg.cc/7hwHWQf9/Mockup-Cart.png)
 - 📝 **Checkout**: Formulario de pago con revisión de productos y costos.
-![Mockup Checkout](https://i.postimg.cc/VLkKMn0J/Mockup-Checkout.png)
+![Mockup Checkout](https://i.postimg.cc/9QQGb8KG/Mockup-Purchase.png)
 - ✅ **Orden de compra**: Confirmación de compra con datos sobre la orden.
 ![Mockup Purchase Success](https://i.postimg.cc/y6yYZBbb/Mockup-Success.png)
 
